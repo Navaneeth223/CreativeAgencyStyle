@@ -46,9 +46,14 @@ const Hero = () => {
 
     return (
         <section ref={containerRef} className="relative h-screen flex flex-col justify-center items-center px-6 overflow-hidden bg-primary">
-            <div className="absolute inset-0 z-0 opacity-20">
-                {/* Abstract background video or shape could go here */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/20 rounded-full blur-[120px] animate-pulse"></div>
+            <div className="absolute inset-0 z-0 overflow-hidden">
+                <img
+                    src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=2000"
+                    alt="Hero Background"
+                    className="w-full h-full object-cover opacity-40 scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-transparent to-primary/80"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/10 rounded-full blur-[120px] animate-pulse"></div>
             </div>
 
             <div className="relative z-10 text-center mix-blend-difference">

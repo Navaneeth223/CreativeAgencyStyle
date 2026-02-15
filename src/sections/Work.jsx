@@ -5,11 +5,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-    { id: 1, title: 'Nebula', category: 'Web Design', color: '#1a1a1a' },
-    { id: 2, title: 'Apex', category: 'Branding', color: '#333333' },
-    { id: 3, title: 'Velocity', category: 'Development', color: '#4d4d4d' },
-    { id: 4, title: 'Echo', category: 'Experience', color: '#666666' },
-    { id: 5, title: 'Mirage', category: 'Mobile App', color: '#808080' },
+    { id: 1, title: 'Nebula', category: 'Web Design', image: 'https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&fit=crop&q=80&w=800' },
+    { id: 2, title: 'Apex', category: 'Branding', image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800' },
+    { id: 3, title: 'Velocity', category: 'Development', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800' },
+    { id: 4, title: 'Echo', category: 'Experience', image: 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=800' },
+    { id: 5, title: 'Mirage', category: 'Mobile App', image: 'https://images.unsplash.com/photo-1451187530230-b237ee90d441?auto=format&fit=crop&q=80&w=800' },
 ];
 
 const Work = () => {
@@ -65,12 +65,9 @@ const Work = () => {
                     >
                         <div
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                            style={{ backgroundColor: project.color }}
+                            style={{ backgroundImage: `url(${project.image})` }}
                         >
-                            {/* Placeholder for Project Image */}
-                            <div className="w-full h-full flex items-center justify-center opacity-30 text-8xl font-bold text-white/10">
-                                {project.id}
-                            </div>
+                            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
                         </div>
 
                         <div className="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500">

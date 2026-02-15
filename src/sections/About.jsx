@@ -48,11 +48,13 @@ const About = () => {
 
             {/* Visual Side */}
             <div className="w-full md:w-1/2 h-[50vh] md:h-[80vh] relative overflow-hidden mb-10 md:mb-0">
-                <div ref={imageRef} className="absolute inset-0 bg-neutral/10 w-full h-full object-cover">
-                    {/* Placeholder for About Image */}
-                    <div className="w-full h-full bg-neutral-800 flex items-center justify-center text-white/20 text-4xl font-display font-bold">
-                        AGENCY LIFE
-                    </div>
+                <div ref={imageRef} className="absolute inset-0 w-full h-full">
+                    <img
+                        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
+                        alt="Our Studio"
+                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-primary/20"></div>
                 </div>
             </div>
 
