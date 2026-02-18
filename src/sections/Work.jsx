@@ -9,7 +9,7 @@ const projects = [
     { id: 2, title: 'Apex', category: 'Branding', image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800' },
     { id: 3, title: 'Velocity', category: 'Development', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800' },
     { id: 4, title: 'Echo', category: 'Experience', image: 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=800' },
-    { id: 5, title: 'Mirage', category: 'Mobile App', image: 'https://images.unsplash.com/photo-1451187530230-b237ee90d441?auto=format&fit=crop&q=80&w=800' },
+    { id: 5, title: 'Mirage', category: 'Mobile App', image: 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&q=80&w=1200' },
 ];
 
 const Work = () => {
